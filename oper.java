@@ -10,14 +10,14 @@ public class oper {
         z = s.nextInt();
         System.out.println("The Sum of three number is "+(x+y+z));
         if(x>y&&x>z)
-		   	g=x;
-		else if(y>x&&y>z)		
-            g=y;
+           g=x;
+        else if(y>x&&y>z)		
+           g=y;
         else
             g=z;
         if(x<y&&x<z)
-		   	sm=x;
-		else if(y<x&&y<z)		
+            sm=x;
+	else if(y<x&&y<z)		
             sm=y;
         else
             sm=z;
