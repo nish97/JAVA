@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex4a;
+
 
 import java.io.*;
 import java.net.*;
@@ -12,14 +12,13 @@ public class FtpServer {
        public static void main(String args[])throws IOException{
          ServerSocket ss = new ServerSocket(8010);
          Socket s = ss.accept();
-         System.out.println("Connected...");
          BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
          PrintWriter p = new PrintWriter(s.getOutputStream(),true);
          DataInputStream in = new DataInputStream(System.in);
          boolean bo = true;
          while(bo){
             int i = Integer.parseInt(br.readLine());
-            System.out.println(i);
+	    System.out.println(i);
             String st;
             switch(i){
                 case 1:{
